@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카드 기억력 게임!</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <section class="container">
+        <section>
+            <div class="menus">
+                <div id="logo">
+                    <button style="font-size: 40px;"><i class="fa-solid fa-hands-holding-child"></i></button>
+                </div>
+
+                <div class="main-menu">
+                    <button style="font-size: 40px;">소식통</button>
+                    <button style="font-size: 40px;">안내사항</button>
+                    <button style="font-size: 40px;">편의시설</button>
+                    <button style="font-size: 40px;">경로당</button>
+                    <button style="font-size: 40px;">놀거리</button>
+                </div>
+
+                <div id="magnifying">
+                    <button id="plus" style="font-size: 40px;"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                    <button id="minus" style="font-size: 40px;"><i class="fa-solid fa-magnifying-glass-minus"></i></button>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="content">
+        <div class="game-container">
+            <h1>카드 기억력 게임!</h1>
+            <div class="game-board" id="game-board"></div>
+            <button id="restart-button">다시 시작!</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="card.js"></script>
+</body>
+
+</html>

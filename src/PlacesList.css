@@ -1,0 +1,24 @@
+#placesListBottom {
+    list-style: none;
+    padding: 0;
+    font-size: 30px;
+  }
+  
+  #paginationBottom {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  #placesListBottomContainer {
+    margin-top: 20px;
+  }
+  
+  #menu_wrap_bottom {
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: white;
+  }
+
+ 

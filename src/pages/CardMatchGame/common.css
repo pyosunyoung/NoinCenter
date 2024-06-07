@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    background-color: #f0f0f0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #ccc;
+}
+
+.menus {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 120px;
+    padding: 10px 0;
+}
+
+#logo {
+    position: absolute;
+    left: 20px;
+}
+
+.menus button {
+    border: none;
+    background: none;
+    margin: 20px;
+    font-weight: bolder;
+    color: #333;
+    cursor: pointer;
+    font-size: 40px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.menus button:hover {
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#magnifying {
+    position: absolute;
+    right: 20px;
+}
+
+#magnifying button {
+    font-size: 30px;
+    margin: 0 5px;
+    padding: 10px 15px;
+}
+
+#magnifying button:hover {
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-menu button:hover {
+    transform: scale(1.1);
+}
+
+.content {
+    padding-top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 140px);
+    background-color: #ffffff;
+    font-size: 20px; /* 폰트 크기 추가 */
+}
+
+@font-face {
+    font-family: 'TTLaundryGothicB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+#game-title {
+    font-family: 'TTLaundryGothicB', cursive;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #2fca10;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px); /* 칸 크기 키우기 */
+    grid-gap: 20px; /* 간격 키우기 */
+    margin-bottom: 20px;
+}
+
+.grid-item {
+    width: 200px; /* 아이템 크기 키우기 */
+    height: 200px; /* 아이템 크기 키우기 */
+    background-color: lightgray;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.grid-item.active {
+    background-color: yellow;
+}
+
+button {
+    font-family: 'TTLaundryGothicB', cursive;
+    padding: 20px 40px;
+    font-size: 24px; /* 버튼 폰트 크기 키우기 */
+    cursor: pointer;
+    background-color: #2fca10;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: #259c0d;
+    box-shadow: 0 6px #218c0b;
+}
+
+button:active {
+    background-color: #259c0d;
+    box-shadow: 0 2px #218c0b;
+    transform: translateY(2px);
+}
+.content {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    /* 연회색 배경 */
+    padding: 10px;
+}
+
+@font-face {
+    font-family: 'TTLaundryGothicB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'TTLaundryGothicB', cursive;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #2fca10;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    grid-gap: 15px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.card {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border: 2px solid #2fca10;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #2fca10;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card:hover {
+    background-color: #2fca10;
+    color: white;
+}
+
+#restart-button {
+    font-family: 'TTLaundryGothicB', cursive;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: #2fca10;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#restart-button:hover {
+    background-color: #259c0d;
+}

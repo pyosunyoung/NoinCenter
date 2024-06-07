@@ -1,0 +1,41 @@
+#logo {
+    position: absolute;
+    left: 70px;
+}
+
+.container {
+    width: 100%;
+    background-color: white;
+}
+
+.menus {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ebebeb;
+    align-items: center;
+    height: 90px;
+}
+
+.menus button {
+    border: none;
+    background: none;
+    margin: 10px;
+    font-weight: bolder;
+    color: #43526E;
+    cursor: pointer;
+}
+
+.menus button:hover {
+    color: blue;
+    transition: 1s ease-out;
+}
+
+#magnifying {
+    position: absolute;
+    right: 60px;
+}
+
+.main-menu button:hover {
+    transform: scale(1.3);
+}
